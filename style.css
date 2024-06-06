@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+  padding: 0 40px;
+
+  .container {
+    display: flex;
+    gap: 3px;
+    height: 100vh;
+    div {
+      position: relative;
+      width: 25%;
+      height: 100%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.2s;
+      }
+      .image-info {
+        min-height: 120px;
+        color: white;
+        width: 25vw;
+        font-size: 13px;
+        position: absolute;
+        padding: 30px;
+        top: calc(100vh - 140px);
+        bottom: 0;
+        span {
+          color: rgb(199, 197, 197);
+        }
+      }
+    }
+    div:hover {
+      img {
+        transform: scale(1.1);
+        -webkit-filter: grayscale(100%);
+        filter: blur(6px) grayscale(100%);
+        opacity: 0.5;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  body {
+    padding: 0 5px;
+    .container {
+      div {
+        img {
+          width: 300%;
+        }
+      }
+    }
+  }
+}
