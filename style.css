@@ -41,24 +41,6 @@ body {
         }
       }
     }
-    div:hover {
-      .image-info {
-        top: calc(100vh - 140px);
-        transition: top 0.3s ease;
-      }
-      p {
-        a {
-          visibility: unset;
-          color: rgb(113, 113, 151);
-        }
-      }
-      img {
-        transform: scale(1.1);
-        -webkit-filter: grayscale(100%);
-        filter: blur(6px) grayscale(100%);
-        opacity: 0.5;
-      }
-    }
   }
 }
 @media (max-width: 900px) {
