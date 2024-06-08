@@ -35,6 +35,7 @@ function stringTransformation(input) {
   return output;
 }
 
+// Example that are used to check the code
 console.log(stringTransformation("coders")); // Output: "sredoc"
 console.log(stringTransformation("challanges")); // Output: "99 104 97 108 108 97 110 103 101 115"
 console.log(stringTransformation("code trak force challange")); // Output : "99 111 100 101 32 116 114 97 107 32 102 111 114 99 101 32 99 104 97 108 108 97 110 103 101"
